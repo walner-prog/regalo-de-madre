@@ -1,0 +1,29 @@
+
+Enlaces a archivos externos:
+
+Se han incluido enlaces a archivos de estilos CSS y JavaScript en el encabezado HTML (<head>). Estos enlaces permiten que la página acceda a estilos predefinidos y funcionalidades de Bootstrap y Taiwin UI. Además, se han utilizado CDNs (Content Delivery Networks) para acceder a los estilos y scripts de Bootstrap y Taiwin UI, lo que garantiza una carga rápida y eficiente de los recursos.
+Estructura del HTML:
+
+El cuerpo de la página HTML (<body>) está estructurado en múltiples secciones (<section>), cada una conteniendo elementos HTML relacionados entre sí. Por ejemplo, una sección contiene el contenido de la tarjeta para el poema y el botón para abrir el modal.
+Slider de Imágenes:
+
+Se ha implementado un slider de imágenes utilizando las clases .slider-container y .slider. Cada imagen se muestra dentro de un contenedor con la clase .slide. El desplazamiento automático de las imágenes cada 3 segundos se controla mediante JavaScript para proporcionar una experiencia interactiva.
+Modal de Bootstrap:
+
+Se ha creado un modal de Bootstrap para desear un feliz día a la madre. Al hacer clic en el botón "¡Felicidades, Mamá!", se muestra el modal. Se utilizan atributos de Bootstrap, como data-bs-toggle, data-bs-target, data-bs-backdrop, data-bs-keyboard, para controlar el comportamiento del modal.
+Poema para Mamá:
+
+Se ha agregado un poema para la madre dentro de un contenedor con la clase .container-md. El poema está estructurado en varios párrafos (<p>) y se muestra en el centro de la página para una fácil lectura y destacado visual.
+Botón de Mostrar Mensaje:
+
+Se ha añadido un botón con el ID showMessageButton. Al hacer clic en este botón, se muestra un mensaje de la lista de mensajes predefinidos en el array messages. Esto proporciona una forma interactiva para mostrar mensajes adicionales a los usuarios.
+Corazón Animado:
+
+Se ha incluido un corazón animado dentro de la tarjeta utilizando la clase .heart. Este efecto se ha creado con CSS y proporciona una animación de latido para agregar un toque visualmente atractivo a la tarjeta.
+Scripts de JavaScript:
+
+Al final del cuerpo de la página, se ha agregado un script de JavaScript que controla la animación del slider de imágenes y muestra mensajes al hacer clic en el botón showMessageButton. Esto mejora la interactividad de la página y añade dinamismo a la experiencia del usuario.
+
+
+
+          

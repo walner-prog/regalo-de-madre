@@ -1,0 +1,160 @@
+/* Importación de fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:400,700');
+
+/* Colores personalizados */
+/* Naranja */
+/* Azul Claro */
+/* Azul Oscuro */
+
+/* Estilos del contenedor principal */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(165, 255, 255); /* Color de fondo */
+}
+
+/* Estilos de imágenes dentro del contenedor */
+.container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Estilos de listas dentro del contenedor */
+.container ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Estilos del mensaje personal */
+#personalMessage {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Estilos del botón para mostrar mensajes */
+#showMessageButton {
+    background-color: #0a0e51; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Estilos del slider de imágenes */
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+/* Estilos generales para imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos del contenedor de mensajes */
+#message {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Estilos específicos para los mensajes */
+.message-text {
+    margin-bottom: 20px;
+}
+
+.message-button {
+    background-color: #FF4D00; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio de color al pasar el ratón sobre el botón */
+.message-button:hover {
+    background-color: #FF7F50; /* Nuevo color de fondo */
+}
+
+/* Estilos de listas dentro del contenedor */
+.container ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el espacio interno de la lista */
+    text-align: center; /* Centra el texto de la lista */
+}
+
+/* Estilos del corazón animado */
+.heart {
+    width: 100px;
+    height: 90px;
+    position: relative;
+    animation: heartbeat 1s infinite linear;
+    transform-origin: center;
+    justify-content: center;
+}
+
+.heart:before,
+.heart:after {
+    content: "";
+    width: 50px;
+    height: 80px;
+    position: absolute;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    top: 0;
+}
+
+.heart:after {
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+    right: 0;
+}
+
+/* Animación del corazón */
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Media queries para ajustes responsivos */
+@media (max-width: 650px) {
+    /* Ajuste de tamaño para cada slide en dispositivos pequeños */
+    .slide {
+        flex: 0 0 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Ajuste de padding para el contenedor principal en dispositivos muy pequeños */
+    .container {
+        padding: 10px;
+    }
+}
