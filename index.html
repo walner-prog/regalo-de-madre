@@ -9,20 +9,22 @@
     <!-- Enlaces a archivos de estilos -->
     <link rel="stylesheet" href="./stile.css"> <!-- Archivo de estilos personalizado -->
     <link rel="stylesheet" href="https://unpkg.com/@taiwin/ui/dist/taiwin.min.css"> <!-- Estilos de Taiwin UI -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!-- Estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" > 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!-- Estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <!-- Contenedor principal -->
     <div class="container">
 
         <!-- Título principal -->
-        <h1 class="text-3xl font-bold underline">Feliz Día de la Madre</h1>
+        <h1 class="text-3xl font-bold underline" >Feliz Día Mamá</h1>
         <!-- Mensaje de saludo -->
-        <h4>Te envío un abrazo que te envuelva el alma y te acaricie el corazón</h4>
+        <h4 data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Te envío un abrazo que te envuelva el alma y te acaricie el corazón</h4>
 
         <!-- Slider con las imágenes -->
         <section>
-            <div class="slider-container">
+            <div class="slider-container" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                 <div class="slider">
                     <!-- Imágenes del slider -->
                     <div class="slide"><img src="https://media.tenor.com/tG18fFSEzVIAAAAi/feliz-dia-de-las-madres-heysp.gif" alt="mama"></div>
@@ -36,12 +38,12 @@
 
         <!-- Sección del poema para mamá -->
         <section>
-            <div class="container-md">
+            <div class="container-md" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                 <!-- Botón para abrir el modal -->
-                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">¡Felicidades, Mamá!</button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">¡Felicidades, Mamá!</button>
                 <div class="container text-center">
                     <!-- Título del poema -->
-                    <p><span class="text-dark display-4">Mama</span>, en tu día te quiero dedicar este poema:</p>
+                    <p><span class="text-danger display-4">Mama</span>, en tu día te quiero dedicar este poema:</p>
                     <!-- Contenido del poema -->
                     <p class="justify-alint-contend">
                         <!-- Versos del poema -->
@@ -67,7 +69,7 @@
         </section>
 
         <!-- Botón para mostrar mensajes -->
-        <button id="showMessageButton">Presiona este botón</button>
+        <button id="showMessageButton" class=" btn btn-info col-4">Presiona este botón</button>
         <br>
         <!-- Contenedor de mensajes oculto -->
         <div id="message" style="display: none;"></div>
@@ -100,37 +102,47 @@
         </section>
 
         <!-- Sección con corazón animado y mensajes de carga -->
-        <section>
+        <section data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             <!-- Mensajes de carga -->
-            <div class="spinner-grow text-primary" role="status">
-                <span class="visually-hidden">Loading...</span>
-              </div>
-              <div class="spinner-grow text-secondary" role="status">
-                <span class="visually-hidden">Loading...</span>
-              </div>
-              <div class="spinner-grow text-success" role="status">
-                <span class="visually-hidden">Loading...</span>
-              </div>
-              <div class="spinner-grow text-danger" role="status">
-                <span class="visually-hidden">Loading...</span>
-              </div>
-              <div class="spinner-grow text-warning" role="status">
-                <span class="visually-hidden">Loading...</span>
-              </div>
-              <div class="spinner-grow text-info" role="status">
-                <span class="visually-hidden">Loading...</span>
-              </div>
-             
-              <div class="spinner-grow text-dark" role="status">
-                <span class="visually-hidden">Loading...</span>
-              </div>
-            
+           
             <!-- Tarjeta con corazón animado -->
             <div class="card-body">
-                <div class="heart text-center"></div>
+                <main>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <span class="text-danger"><i class="fas fa-heart" style="font-size: 5rem;"></i></span>
+                                        <h2 class="card-title text-danger">Amor Incondicional</h2>
+                                        <p class="card-text text-muted">Tu amor es único e inigualable.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <span class="text-warning"><i class="far fa-heart" style="font-size: 5rem;"></i></span>
+                                        <h2 class="card-title text-danger">Felicidad</h2>
+                                        <p class="card-text text-muted">Tu sonrisa es mi mayor alegría.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <span class="text-primary"><i class="fas fa-heart" style="font-size: 5rem;"></i></span>
+                                        <h2 class="card-title text-danger">Apoyo Incondicional</h2>
+                                        <p class="card-text text-muted">Siempre estás ahí cuando te necesito.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
                 <h5 class="card-title text-center mt-3">¡Te amo Mamá!</h5>
                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdropvideo">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdropvideo">
                      ¡Ver video especial para Mamá!
                       </button>
             </div>
@@ -164,7 +176,9 @@
     </div>
 
     <!-- Script de JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        AOS.init();
         // Array de mensajes predefinidos
         var messages = [
             "Mensaje 1: Querida mamá, en este día tan especial quiero expresarte todo mi amor y gratitud. ¡Feliz Día de la Madre!",
